@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  height: 97.96vh;
+}
+.top {
+  position: fixed;
+  top: -559px;
+  left: -377px;
+}
+.bottom {
+  position: fixed;
+  bottom: -630px;
+  left: 570px;
+  z-index: -10;
+}
+.pro {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 350px;
+  background-color: white;
+  height: 400px;
+  border-radius: 20px;
+}
+main::before {
+  content: url(images/bg-pattern-card.svg);
+  position: absolute;
+  width: 1px;
+  border-radius: 20px 20px 0 0;
+}
+.cal {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+}
+h1 span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: 5px;
+}
+.victor {
+  border-radius: 50%;
+  border: 7px solid white;
+  position: absolute;
+  top: 80px;
+  left: 33.5%;
+}
+.lon {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.cal {
+  padding-top: 30px;
+  border-top: 0.5px solid hsla(0, 0%, 59%, 0.199);
+  justify-content: space-around;
+}
+.h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.p {
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 2px;
+}
+@media (max-width: 400px) {
+  body .top {
+    top: -620px;
+    left: -735px;
+  }
+  body .bottom {
+    bottom: -630px;
+    left: 135px;
+  }
+}
+.card {
+  width: 350px;
+  height: 140px;
+}
